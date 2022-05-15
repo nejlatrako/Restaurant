@@ -41,6 +41,67 @@ header .navbar a:hover{
     color: silver;
   }
 
+.home{
+    display: flex;
+    margin-top: 90px;
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-image:url(/restoran.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.restorant{
+    display: flex;
+    width: 50%;
+    height: 800px;
+    float: left;
+    border-collapse: collapse;
+}
+.restorant img {
+    display: flex;
+    width: 90%;
+    height: 700px;
+    display: block;
+    margin-top: 35px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutUs1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 800px;
+    float: left;
+    border-collapse: collapse;
+    
+}
+.aboutUs2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24%;
+    height: 800px;
+    float: right;
+    border-collapse: collapse;
+    
+}
+.aboutUs1 p{
+    display: flex;
+    margin-left: 30px;
+    color: whitesmoke;
+    text-align: justify;
+    font-weight: bold;
+}
+.aboutUs2 p{
+    display: flex;
+    margin-right: 30px;
+    color: whitesmoke;
+    text-align: justify;
+    font-weight: bold;
+}
+
 /*RESPONSIVE DESIGN*/
 
 /* Mobitel*/
@@ -49,16 +110,25 @@ header .navbar a:hover{
 
 
     header .navbar a{font-size: medium;}
+    .aboutUs1 p, .aboutUs2 p { font-size: small; width: 100%; height: 24% ; margin-right: 30px; margin-left: 30px; margin-top: auto; margin-bottom: auto;}
+    .restorant {width: 100%; height: 33%;  justify-content: center; align-items: center;}
+    .restorant img {width: 95%; height: 95%;  justify-content: center; align-items: center;}
+    .aboutUs1  { width: 100%; height: 33%; justify-content: center; }
+    .aboutUs2 { width: 100%; height: 33%;justify-content: center;}
 
 }
 /* Tablet*/
 
 @media only screen and ( min-width : 451px )  and ( max-width : 960px ){
-    header .navbar a{font-size:x-large;}
+    header .navbar a{font-size:large;}
+    .aboutUs1 p, .aboutUs2 p { font-size: medium;}
+    .restorant img {height: 60%; align-items: center; justify-content: center; margin-top: auto; margin-bottom: auto;}
+
     
 }
 /* Desktop*/
 
 @media only screen and ( min-width : 961px ) {
+
     
 }
