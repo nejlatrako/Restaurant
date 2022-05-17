@@ -12,7 +12,10 @@ html{
     scroll-padding-top: 6rem;
   }
 
-
+.header{
+    height: 90px;
+    width: 100%;
+}
 header{
     position: fixed;
     top:0; left: 0; right:0;
@@ -22,12 +25,12 @@ header{
     background:#1a1919;
     padding:2%;
     height: 90px;
-
-  }
+}
 
 .logo img {
     width: 80px;
     height: 80px;
+    border-radius: 0.5rem;
 }
 
 header .navbar a{
@@ -43,7 +46,6 @@ header .navbar a:hover{
 
 .home{
     display: flex;
-    margin-top: 90px;
     display: block;
     width: 100%;
     height: 800px;
@@ -101,6 +103,56 @@ header .navbar a:hover{
     text-align: justify;
     font-weight: bold;
 }
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    gap: 1.5rem;
+}
+.menu .meals{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1a1919;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    width: 20%;
+    margin-left: 1rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+}
+.menu .meals .mealPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu .meals .mealPic img{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    border-radius: 0.5rem;
+}
+
+.menu .meals .description{
+    text-align: justify;
+    color: whitesmoke;
+    padding: 2rem;
+
+
+}
+
+.menu .meals .description h3{
+    font-size: larger;
+    color: whitesmoke;
+}
+
+.menu .meals .description p{
+    font-size: large;
+    color: gray;
+    padding: 1rem 0;
+}
 
 /*RESPONSIVE DESIGN*/
 
@@ -115,6 +167,11 @@ header .navbar a:hover{
     .restorant img {width: 95%; height: 95%;  justify-content: center; align-items: center;}
     .aboutUs1  { width: 100%; height: 33%; justify-content: center; }
     .aboutUs2 { width: 100%; height: 33%;justify-content: center;}
+    .menu .meals {width: 90%;}
+    .menu .meals .mealPic img { width: 100px; height: 100px; align-items: center; justify-content: center; margin-top: auto; margin-bottom: auto;}
+    .menu .meals .description h3{font-size: medium; }
+    .menu .meals .description h3{font-size: small; }
+    
 
 }
 /* Tablet*/
@@ -123,7 +180,11 @@ header .navbar a:hover{
     header .navbar a{font-size:large;}
     .aboutUs1 p, .aboutUs2 p { font-size: medium;}
     .restorant img {height: 60%; align-items: center; justify-content: center; margin-top: auto; margin-bottom: auto;}
-
+    .menu .meals {width: 40%;}
+    .menu .meals .mealPic img { width: 150px; height: 150px; align-items: center; justify-content: center; margin-top: auto; margin-bottom: auto;}
+    .menu .meals .description h3{font-size: large; }
+    .menu .meals .description h3{font-size: medium; }
+ 
     
 }
 /* Desktop*/
