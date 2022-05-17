@@ -10,9 +10,9 @@ fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
                     <img src="${food.imageUrl}" alt="picture">
                 </div>
                 <div class="description">
-                    <h3> Meal Name : ${food.name}</h3>
+                    <h3> Meal Name: ${food.name} <br></h3>
                     <p> ID: ${food.id} <br>
-                     Price : ${food.price}</p>
+                     Price: ${food.price}</p>
 
                 </div>
             </div>
