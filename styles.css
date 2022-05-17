@@ -103,10 +103,23 @@ header .navbar a:hover{
     text-align: justify;
     font-weight: bold;
 }
+.menu .offer{
+    height: 90px;
+    width: 100%;
+    background-color: #1a1919;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+}
+.menu .offer h1{
+    color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
 .menu{
     display: flex;
     flex-wrap: wrap;
-    background-color: whitesmoke;
+    background-color: #272525;
     gap: 1.5rem;
 }
 .menu .meals{
