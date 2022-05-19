@@ -209,6 +209,69 @@ header .navbar a:hover{
     background-color: #272525;
     color: whitesmoke;
 }
+.button{
+    cursor: pointer;
+}
+
+/* Form and modal style*/
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1a1919;
+    z-index: 1000;
+    cursor: pointer;
+}
+.modal{
+    width: 30rem;
+    height: 30rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#272525;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 10px;
+    color:whitesmoke ;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.formInputField{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    border-radius: 15px;
+}
+.inputField{
+    width: 13rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.tekst{
+    width: 3rem;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+
 
 
 

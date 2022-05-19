@@ -79,7 +79,22 @@ const updateFood = (elementId) => {
       }),
     }).then((response) => {
       if (!response.ok) {
-        alert("[GRESKA]");
+        alert("[ERROR]");
       }
     });
   };
+
+let closeButton = document.querySelector(".closeBtn");
+let overlay = document.querySelector(".overlay");
+let modal = document.querySelector(".modal");
+let form = document.querySelector(".form");
+let addBtn = document.querySelector(".add");
+let update = document.querySelector(".update");
+let formaID = 0;
+let deleteModalNep = document.querySelector(".deleteMOdalNep");
+
+overlay.addEventListener("click", () =>{
+    overlay.classList.add("hidden");
+    modal.classList.add("hidden");
+})
+
