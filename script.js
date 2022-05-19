@@ -1,4 +1,3 @@
-
 fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
     .then(res => res.json())
     .then(data =>{
@@ -13,30 +12,28 @@ fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
                     <h3> Meal Name: ${food.name} <br></h3>
                     <p> ID: ${food.id} <br>
                      Price: ${food.price}</p>
-
                 </div>
             </div>
             `;
         }).join('');
-        console.log(html);
         document
             .querySelector('#menu')
             .insertAdjacentHTML("afterbegin", html);
     } )
-    
 
-fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food', {
-        method : 'POST',
-        headers:{
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            "id": 0,
-            "name": "string",
-            "price": 0,
-            "imageUrl": "string"
-        })
+
+  
+const addFood = (object) => {
+    console.log(object);
+    console.log("ADD")
+    const Add = document.getElementById('add').value;
+    
+    fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food', {
+        method: 'POST',
+        headers: new Headers({'content-type': 'application/json'}),
+        body: JSON.stringify( object)
     })
     .then(res => {
         console.log(res);
     })
+}

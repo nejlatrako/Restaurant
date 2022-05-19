@@ -48,9 +48,46 @@
         <div class="offer">
             <h1>SPECIAL OFFER FROM OUR MENU</h1>
         </div>
+        <div class="options">
+            <p> Let us know : 
+                <br> Sholud We change something ?
+                <br> Update, Delete or Add something new ?</p>
+            <div class="btn">
+                <button class="add" id="add">ADD NEW</button>
+                <button class="update" id="update">UPDATE</button>
+                <button class="delete" id="delete">DELETE</button>
+            </div>
+            
+        </div>
     </div>
 
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+        <form class="form">
+            <div class="formInputField ">
+                <label class="tekst">ID  </label>
+                <input type="text" placeholder="Input your id here..." class="inputField"/>
+            </div>
+            <div class="formInputField deleteModalNep">
+                <label class="tekst">Name  </label>
+                <input type="text" placeholder="Input your name of food here..." class="inputField"/>
+            </div>
+            <div class="formInputField deleteModalNep">
+                <label class="tekst">Price </label>
+                <input type="text" placeholder="Input your price here..." class="inputField"/>
+            </div>
+            <div class="formInputField deleteModalNep">
+                <label class="tekst">Image  </label>
+                <input type="text" placeholder="Input your image url here..." class="inputField"/>
+            </div>
+            <div class="buttons">    
+                <button class="button-6 submitBtn" role="button" type="submit">Submit</button>
+            </div>
+            
+        </form>
+        <button class="button-6 closeBtn" role="button">Close</button>
+    </div>
 
-
+      
     <script src="/script.js"></script>
 </html>

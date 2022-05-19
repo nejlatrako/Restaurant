@@ -169,6 +169,49 @@ header .navbar a:hover{
     color: gray;
     padding: 1rem 0;
 }
+.menu .options {
+    width: 100%;
+    height: 200px;
+    background-color: #1a1919;
+}
+.menu .options p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: large;
+    color: whitesmoke;
+    padding: 2rem;
+}
+.menu .options .btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20% ;
+    gap: 0.5rem ;
+
+}
+
+.menu .options .btn .add{
+    height: 100%;
+    width: 30%;
+    background-color: #272525;
+    color: whitesmoke;
+}
+.menu .options .btn .update{
+    height: 100%;
+    width: 30%;
+    background-color: #272525;
+    color: whitesmoke;
+}
+.menu .options .btn .delete{
+    height: 100%;
+    width: 30%;
+    background-color: #272525;
+    color: whitesmoke;
+}
+
+
+
 
 /*RESPONSIVE DESIGN*/
 
