@@ -45,3 +45,41 @@ const deleteMeal = (id) => {
       console.log(res);
     });
   };
+
+//PUT
+const updateFood = (elementId) => {
+    const element = meals.find((element) => element.id === elementId);
+    const mealFormId = document.getElementById("meal-id");
+    const mealFormName = document.getElementById("meal-name");
+    const mealFormPrice = document.getElementById("meal-price");
+    const mealFormURL = document.getElementById("meal-url");
+  
+    mealFormId.value = element.id;
+    mealFormName.value = element.name;
+    mealFormPrice.value = element.price;
+    mealFormURL.value = element.imageUrl;
+  };
+  
+  const updateMeal = () => {
+    const mealFormId = document.getElementById("meal-id").value;
+    const mealFormName = document.getElementById("meal-name").value;
+    const mealFormPrice = document.getElementById("meal-price").value;
+    const mealFormURL = document.getElementById("meal-url").value;
+  
+    fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food`, {
+      method: "PUT",
+      headers: new Headers({
+        "Content-Type": "application/json",
+      }),
+      body: JSON.stringify({
+        id: mealFormId,
+        name: mealFormName,
+        price: mealFormPrice,
+        imageUrl: mealFormURL,
+      }),
+    }).then((response) => {
+      if (!response.ok) {
+        alert("[GRESKA]");
+      }
+    });
+  };
