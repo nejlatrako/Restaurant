@@ -144,6 +144,7 @@ form.addEventListener("submit", (event) => {
       price: price.value,
       imageUrl: image.value,
     });
+    formaId = 0;
     id.value = "";
     nameR.value = "";
     price.value = "";
@@ -156,6 +157,7 @@ form.addEventListener("submit", (event) => {
       price: price.value,
       imageUrl: image.value,
     });
+    formaId = 0;
     id.value = "";
     nameR.value = "";
     price.value = "";
