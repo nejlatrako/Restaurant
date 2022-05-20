@@ -429,6 +429,7 @@ header .navbar a:hover{
     width: 100%;
     height: 45px;
     text-align: center;
+    color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .footer .socIMG{
@@ -438,11 +439,13 @@ header .navbar a:hover{
     width: 100%;
     height: 50px;
     gap: 1rem;
+    background-color: #1a1919;
 }
 .footer p{
     width: 100%;
     height: 20px;
     text-align: center;
+    color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
