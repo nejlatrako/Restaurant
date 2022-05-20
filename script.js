@@ -144,6 +144,10 @@ form.addEventListener("submit", (event) => {
       price: price.value,
       imageUrl: image.value,
     });
+    id.value = "";
+    nameR.value = "";
+    price.value = "";
+    image.value = "";
   } else if (formaId === 1) {
     console.log("PUT");
     updateMeal({
@@ -152,6 +156,10 @@ form.addEventListener("submit", (event) => {
       price: price.value,
       imageUrl: image.value,
     });
+    id.value = "";
+    nameR.value = "";
+    price.value = "";
+    image.value = "";
   } else if (formaId === 2) {
     console.log("DELETE");
     deleteMeal(id.value);
