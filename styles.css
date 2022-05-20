@@ -322,6 +322,102 @@ header .navbar a:hover{
   transform: translateY(0);
 }
 
+/*Review style*/
+.review .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color:#1a1919;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.review{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #272525;
+    gap: 1.5rem;;
+}
+
+.review .box {
+    height: 600px;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1a1919;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    width: 30%;
+    margin-left: 1rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+  
+.review .box img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    height: 60%;
+
+    border-radius: 0.5rem;
+    
+  }
+  
+.review  .box h4 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    padding: 0.5rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+.review  .box p {
+    font-size: medium;
+    color: whitesmoke;
+    padding: 1rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+.review .box .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.review .box .rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.review .box .rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.review .box .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.review .box .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.review .box .rate:not(:checked) > label:hover,
+.review .box .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.review .box .rate > input:checked + label:hover,
+.review .box .rate > input:checked + label:hover ~ label,
+.review .box .rate > input:checked ~ label:hover,
+.review .box .rate > input:checked ~ label:hover ~ label,
+.review .box .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
 
 
 
@@ -341,6 +437,10 @@ header .navbar a:hover{
     .menu .meals {width: 90%;}
     .menu .meals .description h3{font-size: medium; }
     .menu .meals .description h3{font-size: small; }
+    .review .box{width: 90%;  height: 400px;}
+    .review .box h4 {font-size: medium;}
+    .review .box p {font-size: small;}
+
     
 
 }
@@ -353,6 +453,9 @@ header .navbar a:hover{
     .menu .meals {width: 40%;}
     .menu .meals .description h3{font-size: large; }
     .menu .meals .description h3{font-size: medium; }
+    .review .box{width: 40%;  height: 400px;}
+    .review .box h4 {font-size: medium;}
+    .review .box p {font-size: small;}
  
     
 }
