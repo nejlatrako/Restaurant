@@ -469,6 +469,7 @@ header .navbar a:hover{
     .restorant img {width: 95%; height: 95%;  justify-content: center; align-items: center;}
     .aboutUs1  { width: 100%; height: 33%; justify-content: center; }
     .aboutUs2 { width: 100%; height: 33%;justify-content: center;}
+    .menu .offer {font-size: medium;}
     .menu .meals {width: 90%;}
     .menu .meals .description h3{font-size: medium; }
     .menu .meals .description h3{font-size: small; }
